@@ -1,4 +1,14 @@
-# Ollama Proxy with Nginx and Cloudflare Tunnel
+# Ollama/Kokoro/Whisper/LM studio Proxy with Nginx and Cloudflare Tunnel
+
+In this project, I added:
+
+- [openedai-whisper](https://github.com/matatonic/openedai-whisper) at `/v1/audio/transcript`
+- [kokoro-fastapi](https://github.com/remsky/Kokoro-FastAPI) at `/v1/audio/voices` and `/v1/audio/speech`
+- LM studio at `/v2/chat/completions` and `/v2/models` for llama.cpp compatible models
+
+**Remember to change port number to match the configuration on your machine**
+
+# Original README
 
 This project provides a Dockerized Nginx server configured to act as a
 reverse proxy for [Ollama](https://github.com/jmorganca/ollama), a local
